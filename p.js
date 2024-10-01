@@ -1,12 +1,5 @@
 (function () {
     'use strict';
-    screen = new Proxy(screen, {
-        get(target, arr){
-          if (arr == 'tv') {
-            return true
-          }else{
-            return target(arr)
-          }
-        }
-      })
+
+    Lampa.Storage.set('is_true_mobile', 'false');
 })();
