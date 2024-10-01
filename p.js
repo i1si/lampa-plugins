@@ -21,4 +21,4 @@
         if (need == 'mobile') return !is_tv;
         return false;
     }
-})
+})();
